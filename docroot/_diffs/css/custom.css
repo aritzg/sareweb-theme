@@ -1,0 +1,237 @@
+/* -------- Global -------- */
+
+#skip-to-content,
+#heading .community-title,
+#heading .page-title,
+#navigation h1 {
+	clip: rect(0 0 0 0);
+	position: absolute;
+}
+
+body {
+	font: Arial, sans-serif;
+	font-size: 12px;
+}
+
+/* -------- Wrapper / Skip / Sign-in -------- */
+
+#wrapper {
+	background:url("../images/custom/header.png") no-repeat scroll right top transparent;
+	font: Arial, sans-serif;
+	margin: 0 auto;
+	min-width: 900px;
+
+}
+
+#skip-to-content,
+#sign-in {
+	right: 2em;
+}
+
+#skip-to-content:active,
+#skip-to-content:focus {
+	clip: auto;
+}
+
+#skip-to-content {
+	top: 1em;
+}
+
+#sign-in {
+	position: absolute;
+	top: 1em;
+}
+
+/* -------- Banner -------- */
+
+#heading .company-title {
+	margin: 0px 0px 0px 15px;
+	padding: 12px 0;
+}
+
+#heading .company-title a {
+}
+
+/* -------- Navigation -------- */
+
+#navigation {
+	-moz-border-radius: 6px;
+	-moz-box-shadow: 0 1px 0 #D2D2D2;
+	-webkit-border-radius: 6px;
+	-webkit-box-shadow: 0 1px 0 #D2D2D2;
+	background: #CCC;
+	background-image: -moz-linear-gradient(top, #CCC, #9A9A9A);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #CCC),color-stop(1, #9A9A9A));
+	border-radius: 6px;
+	box-shadow: 0 1px 0 #D2D2D2;
+	font: Arial, sans-serif;
+	margin: 0 0 10px;
+	padding: 0 25px;
+}
+
+.blue #navigation {
+	background: #ACBFD0;
+	background-image: -moz-linear-gradient(top, #ACBFD0, #6B87A2);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ACBFD0),color-stop(1, #6B87A2));
+}
+
+.green #navigation {
+	background: #BACDB7;
+	background-image: -moz-linear-gradient(top, #BACDB7, #7E9D7A);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #BACDB7),color-stop(1, #7E9D7A));
+}
+
+#navigation ul {
+	list-style: none;
+	margin: 0;
+}
+
+.ie6 #navigation ul,
+.ie7 #navigation ul {
+	zoom: 1;
+}
+
+#navigation ul:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+#navigation li,
+#navigation a {
+	float: left;
+}
+
+#navigation a {
+	color: #444;
+	display: block;
+	padding: 8px 25px;
+	text-decoration: none;
+}
+
+.ie7 #navigation a {
+	height: 17px;
+}
+
+#navigation a:active,
+#navigation a:focus,
+#navigation a:hover {
+	background: #BBB;
+	background-image: -moz-linear-gradient(top, #BBB, #868686);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #BBB),color-stop(1, #868686));
+	color: #EEE;
+}
+
+.blue #navigation a:active,
+.blue #navigation a:focus,
+.blue #navigation a:hover {
+	background: #7E98B1;
+	background-image: -moz-linear-gradient(top, #7E98B1, #405B7B);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #7E98B1),color-stop(1, #405B7B));
+}
+
+.green #navigation a:active,
+.green #navigation a:focus,
+.green #navigation a:hover {
+	background: #91AC8D;
+	background-image: -moz-linear-gradient(top, #91AC8D, #52754D);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #91AC8D),color-stop(1, #52754D));
+}
+
+#navigation .selected a {
+	background: #737373;
+	background-image: -moz-linear-gradient(top, #737373, #292929);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #737373),color-stop(1, #292929));
+	color: #FFF;
+}
+
+.blue #navigation .selected a {
+	background: #405B7B;
+	background-image: -moz-linear-gradient(top, #405B7B, #0F1C32);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #405B7B),color-stop(1, #0F1C32));
+}
+
+.green #navigation .selected a {
+	background: #52754D;
+	background-image: -moz-linear-gradient(top, #52754D, #173013);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #52754D),color-stop(1, #173013));
+}
+
+/* -------- Content -------- */
+
+#content {
+	background: #FFFFFF;
+	min-height: 400px;
+}
+#content a{
+	color:#000000;
+}
+
+#breadcrumbs {
+	display: none;
+}
+
+.portlet {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background: #FFF url(../images/custom/portlet_bg.png) repeat-x left bottom;
+	border: 1px solid #DBDBDB;
+	border-radius: 6px;
+	margin: 0 0 10px;
+	padding: 10px;
+}
+
+.blue .portlet {
+	border-color: #DADEF2;
+}
+
+.green .portlet {
+	border-color: #D2E5CF;
+}
+
+.portlet-content {
+	padding: 10px 0 0;
+}
+
+/* -------- Footer -------- */
+
+#footer  {
+	background:url("../images/custom/footer.png") no-repeat scroll right center transparent;
+	height:100px;
+	vertical-align: middle;
+}
+#footer a{
+	color: #000000;
+	font-weight: bold;
+}
+#footer_logo{
+	background:url("../images/custom/liferay_logo.png") no-repeat scroll left top transparent;
+	display:block;
+	padding-top: 65px;
+	width:100px;
+	margin-left:10px;
+	float:left;
+}
+#footer-list {
+	padding-left: 150px;
+	font-weight: bold;
+}
+#footer-list div{
+	padding-left: 100px;
+	float:left;
+}
+#footer-list ul{
+	list-style: none;
+}
+#footer-list li{
+	display:list-item;
+	
+}
+
+
+/*----------Portlet---------*/
+.portlet-title {
+	height:5px;
+	cursor:move;
+	
+}
